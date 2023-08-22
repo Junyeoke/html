@@ -3,7 +3,7 @@
 
 // id 선택자(#output)로 html 태그 선택
 // 선택함수(querySelector() return 값 : html 태그 나옴)
-// #output : div 태그 -> output 변수에 저장됨
+// #output : div 태그 => output 변수에 저장됨
 let output = document.querySelector("#output");
 
 // innerHTML : CSS 선택자를 이용해서 그 위치에 글자를 넣는 속성

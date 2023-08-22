@@ -78,7 +78,7 @@
 // let divide = a + "/" + b + "=" + (a / b);
 // document.querySelector("#texta").innerHTML = plus+"\n"+minus+"\n"+double+"\n"+divide;
 
-// TODO 1117
+// TODO  1117
 // 문제 설명
 // 두 실수를 입력받아 두 실수의 곱을 출력하되 소수 둘째자리까지 출력하시오.
 // 입력
