@@ -1415,7 +1415,7 @@ console.log(
 
 // let a = Number(prompt("숫자를 입력해주세요"));
 // let sumVal = 0;
-// for(let i = 1; i < a; i++){
+// for(let i = 1; i < a; i++){6
 //   sumVal += i;
 //   if(sumVal >= a) {
 //     break;
@@ -1447,9 +1447,8 @@ console.log(
 //     continue;
 //   }
 //   sumVal += i + " ";
-  
-// }console.log(sumVal);
 
+// }console.log(sumVal);
 
 // TODO 1089
 // 문제 설명
@@ -1474,12 +1473,10 @@ console.log(
 // 시작 값(a), 등차의 값(d), 몇 번째 수 인지를 의미하는 정수(n)가
 // 공백을 두고 입력된다.(모두 0 ~ 100)
 
-
 // 출력
 // n번째 수를 출력한다.
 
-
-// 입력 예시   
+// 입력 예시
 // 1 3 5
 
 // 출력 예시
@@ -1492,3 +1489,35 @@ console.log(
 // console.log(result);
 
 // TODO 1090
+// let a = prompt("숫자를 입력").split(" ").map(Number);
+
+// for (let i = 1; i < a[2]; i++) {
+//   a[0] = a[0] * a[1];
+// }
+// console.log(a[0]);
+
+// TODO 1091
+
+// let a = prompt("숫자를 입력").split(" ").map(Number);
+
+// for (let i = 1; i < a[3]; i++) {
+//   a[0] = (a[0] * a[1])+a[2];
+// }
+// console.log(a[0]);
+
+// TODO 1092
+// let a = prompt("입력").split(" ").map(Number);
+// let day = 1;
+// while (day % a[0] !== 0 || day % a[1] !== 0 || day % a[2] !== 0) {
+//   day++;
+
+// }console.log(day);
+
+// TODO 1093
+let n, i, t;
+let a = new Array(24);
+
+
+// TODO 1094
+
+// TODO 1095
