@@ -588,7 +588,6 @@
 // }
 // console.log("prime");
 
-
 // TODO 1275
 // 문제 설명
 // 어떤 수 n과 k가 있다.
@@ -613,15 +612,151 @@
 // 출력
 // nk의 결과를 출력한다.
 
-// 입력 예시   
+// 입력 예시
 // 3 3
 
 // 출력 예시
 // 27
 
-let n = +prompt("숫자입력");
-let k = +prompt("숫자입력");
-let result = "";
-for(let i = n; i<=k; i++){
-    result = (i * n) * k; 
-} console.log(result);
+// let n = +prompt("숫자입력");
+// let k = +prompt("숫자입력");
+// let result = "";
+// for(let i = n; i<=k; i++){
+//     result = (i * n) * k;
+// } console.log(result);
+
+// 1276
+// let n = +prompt("숫자입력", "5");
+// let result2 = 1;
+// for(let i = n; i >= 1; i--){
+//     result2 *= i;
+// }
+// console.log(result2);
+
+// 1277
+// let number = +prompt("숫자입력", "7");
+// let inputNum = prompt("숫자들 입력", "2 4 7 3 1 2 5").split(" ").map(Number);
+// let first, mid, last;
+// for(let i = 0; i < number; i++){
+//     if(inputNum[i] === inputNum[0]){
+//         first = inputNum[i];
+//     }
+//     if(inputNum[i] === (inputNum[((number+1)/2)-1])) {
+//         mid = inputNum[i];
+//     }
+//     if(inputNum[i] === inputNum[i]) {
+//         last = inputNum[i];
+//     }
+// }
+// console.log(first, mid, last);
+
+// 1278
+// 어떤 숫자가 입력되면 그 숫자가 몇 자릿수 숫자인지 알아내는 프로그램을 작성하시오.
+
+// 예)
+
+// 7   ----> 1   (1자릿수)
+
+// 10  ----> 2   (2자릿수)
+
+// 4322 ----> 4   (4자릿수)
+
+// 입력
+// 1이상의 자연수 n이 입력된다. (n은 int 범위)
+
+// 출력
+// 그 숫자가 몇 자릿수 인지 출력하시오.
+
+// 입력 예시
+// 932
+
+// 출력 예시
+// 3
+
+// let num = prompt("숫자입력", "932");
+// let result = num.length;
+// console.log(num + " 의 자릿수 : " + result);
+
+// 1279
+// let a = +prompt("숫자입력");
+// let b = +prompt("숫자입력");
+// let result = 0;  // 결과 초기화
+// for(let i = a; i <= b; i++){
+//     if(i % 2 === 0){result -= i;}
+//     else {result += i;}
+// }
+// console.log(result);
+
+// 1280
+
+// let a = +prompt("숫자입력");
+// let b = +prompt("숫자입력");
+// let result = " ";
+// let result2 = 0;  // 결과 초기화
+// for(let i = a; i <= b; i++){
+//     if(i % 2 === 0){
+//         result += "-"+i;
+//         result2 -= i;
+//     }
+//     else {
+//         result += "+"+i;
+//         result2 += i;
+//     }
+// }
+// console.log(result + "=" + result2);
+
+// 1281
+// let a = +prompt("숫자입력");
+// let b = +prompt("숫자입력");
+// let array = [];
+// let result = "";
+// let val = 0;
+// let sum = 0;
+// for (let i = a; i <= b; i++) {
+//   array.push(i);
+// }
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] % 2 === 0) {
+//     array[i] = array[i] * -1;
+//   } else {
+//     if (i === 0) {
+//       array[i] = array[i];
+//     } else {
+//       array[i] = "+" + array[i];
+//     }
+//   }
+//   result += array[i]; 
+// }
+// val = array.map(Number);
+// for(let i = 0; i<val.length; i++){
+//     sum += val[i]
+// } 
+// console.log(result+"="+sum);
+
+// 1282
+// let n = +prompt("숫자입력");
+// let k, t;
+// for(let i = 1; i<=n; i++){
+//     if((n >= i*i) && (n < (i+1)*(i+1))){
+//         k = n-i*i;
+//         t = i;
+//         break;
+//     } 
+// }
+// console.log(k + " " + t);
+
+// 1283
+// 입력 예시   
+// 10000
+// 4
+// 10 -10 5 -5 
+
+// 출력 예시
+// -125
+// bad
+let a = prompt("투자한 액수");
+let b = prompt("투자일수");
+let array = new Array(b);
+let result = 0;
+array = prompt("변동폭 입력").split(" ").map(Number);
+
