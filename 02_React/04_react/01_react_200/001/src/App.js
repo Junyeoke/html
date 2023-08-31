@@ -17,7 +17,16 @@ import logo from './logo.svg';
 import './App.css';
 // 자식 컴포넌트(페이지) import
 import Home from "./components/Home.js";
+// 자식 컴포넌트 import
+import Header from './components/Header';
+import Footer from './components/Footer';
+import B_Home2 from './components/B_Home2';
+import C_Exam from './components/C_Exam';
+import D_ImportComp from './components/D_ImportComp';
 
+
+// 최상위 부모컴포넌트 : APP(App.js)
+// 자식컴포넌트 : Home(Home.js)
 function App() {
   return (
     <div className="App">
@@ -25,9 +34,22 @@ function App() {
         <h1>Start React 200!</h1>
         <p>HTML 적용하기</p>
       </div>
+
+      {/* 머리말 */}
+      {/* <Header></Header> */}
+
       {/* 주석 : ctrl + / */}
       {/* Home.js 컴포넌트 태그 */}
-      <Home></Home>
+      {/* 본문 */}
+      {/* <Home></Home> */}
+      {/* <B_Home2></B_Home2> */}
+      {/* TODO:연습문제 */}
+      {/* <C_Exam></C_Exam> */}
+      <D_ImportComp></D_ImportComp>
+
+      {/* TODO: 꼬리말 컴포넌트 정의해보기 */}
+      {/* 꼬리말 */}
+      {/* <Footer></Footer> */}
     </div>
   );
 }
