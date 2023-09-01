@@ -15,37 +15,45 @@
 // 출력
 // 두 수사이의 셀프넘버들의 합을 출력한다.
 
-// let arr = new Array(5001);
+let arr = new Array(5001);  // 셀프넘버 담을 배열
 
-// function self(num) {
-//   let sum = num;
-//   while (1) {
-//     if (num === 0) {
-//       break;
-//     }
-//     sum += num % 10;
-//     num = num / 10;
-//  
-//   return sum;
-// }
+// 셀프넘버
+function self(num) {
+  let sum = num;
+  while (1) {
+    if (num === 0) {
+      break;
+    }
+    sum += num % 10;
+    num = num / 10;
+ 
+  return sum;
+}
+}
 
-// let a, b;
-// a = Number(prompt("처음 숫자 입력"));
-// b = Number(prompt("끝 숫자 입력"));
-// for (let k = 1; k <= 5000; k++) {
-//   let index = self(k);
-//   if (index <= b) {
-//     arr[index] = true;
-//   }
-// }
-// let result = 0;
-// for (let k = a; k <= b; k++) {
-//   if (!arr[k]) {
-//     result += k;
-//   }
-// }
+// 합출력
+let a, b;
+a = Number(prompt("처음 숫자 입력"));
+b = Number(prompt("끝 숫자 입력"));
+for (let k = 1; k <= 5000; k++) {
+  let index = self(k);
+  if (index <= b) {
+    arr[index] = true;
+  }
+}
+let result = 0;
+for (let k = a; k <= b; k++) {
+  if (!arr[k]) {
+    result += k;
+  }
+console.log(result);
+}
 
-// console.log(result);
+
+
+
+
+
 
 // 입력 예시
 // 1 10
